@@ -18,10 +18,10 @@
     <base href="/">
     <meta charset="utf-8">
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Property Management -  </title>
+    <title>Property Rent Manager</title>
 
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <meta name="viewport" content="width=device-width">
@@ -30,6 +30,9 @@
     <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-KEY-HERE"></script>-->
+
+    <script src="envconfig.js" type="text/javascript"></script>
+    <link rel="manifest" href="manifest.json" /> 
 
     <!--     Fonts and icons     -->
     <link href="./assets/css/font-awesome.min.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="./assets/css/font-awesome.min.css"></noscript>
@@ -47,6 +50,10 @@
   </app-root>
 <script src="runtime-es2018.4278f25ad97720b90121.js" type="module"></script><script src="runtime-es5.4278f25ad97720b90121.js" nomodule defer></script><script src="polyfills-es5.06a67b65a2740dc11917.js" nomodule defer></script><script src="polyfills-es2018.a7ad15b0228dc27c2288.js" type="module"></script><script src="scripts.e78a3ef50f0973be8987.js" defer></script><script src="main-es2018.9a3d95de748620fa8eb6.js" type="module"></script><script src="main-es5.9a3d95de748620fa8eb6.js" nomodule defer></script>
 
-
+<script type="text/javascript">
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js');
+  }
+</script>
 
 </body></html>
