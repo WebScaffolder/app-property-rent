@@ -3,7 +3,7 @@
 const r=Object({dev:"/2021/sigrental/api/public/api/v1",prod:"/property-rent"+ (window.iconfig.port ? '-' + window.iconfig.port : '') +"/backend/api/v1"});class o{constructor(t,e)
 {
 this.httpClient = t, this.endpoint = e, this.protocol = "https://", this.version = s.N.production ? r.prod : r.dev;
-const n = new URL(window.iconfig.app_code);
+const n = new URL(window.iconfig.base);
 this.apiUrl = this.protocol + n.hostname + this.version, this.apiUrl = "https:" === n.protocol ? "https://" + n.hostname + this.version : "http://" + n.hostname + this.version, this.resourceUrl = this.apiUrl + "/" + this.endpoint
 }
 
